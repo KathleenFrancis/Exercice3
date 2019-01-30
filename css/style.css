@@ -61,6 +61,18 @@ body {
               "footer  footer  footer";
               max-width: 600px;
           }
+
+        .sidebar {
+            grid-area: 2/1/3/2;
+        }
+
+        .sidebar2 {
+            grid-area: 2/3/4/4
+        }
+
+        .footer {
+            grid-area: 4/1/5/4;
+        }
       }
   
   .box {
