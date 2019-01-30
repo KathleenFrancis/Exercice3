@@ -72,10 +72,10 @@ body {
   
   .header,
   .footer {
-    background-color: #999;
+    background-color: rgb(193, 230, 255);
   }
   
   .sidebar2 {
-    background-color: #ccc;
-    color: #444;
+    background-color: rgb(59, 85, 109);
+    color: rgb(192, 192, 192);
   }
