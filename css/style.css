@@ -106,6 +106,7 @@ body {
   display: grid;
   -ms-grid-column: 1;
   grid-area: repeat 3, 1fr;
+  padding: 20px;
 }
 
 .sidebar {
