@@ -1,108 +1,120 @@
 body {
-    margin: 40px;
-    background-color: rgb(107, 141, 56);
+  margin: 10px;
+  background-color: #d8d1b3;
+}
+
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+}
+
+.sidebar2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sidebar2;
+}
+
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    -ms-grid-columns: 20% auto;
+        grid-template-columns: 20% auto;
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
   }
-  
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    grid-gap: 20px;
+    -ms-grid-columns: 120px auto 120px;
+        grid-template-columns: 120px auto 120px;
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+    max-width: 600px;
+  }
   .sidebar {
-          grid-area: sidebar;
-      }
-  
-      .sidebar2 {
-          grid-area: sidebar2;
-      }
-  
-      .content {
-          grid-area: content;
-      }
-  
-      .header {
-          grid-area: header;
-      }
-  
-      .footer {
-          grid-area: footer;
-      }
-  
-      .wrapper {
-          background-color: #fff;
-          color: #444;
-      }
-  
-    .wrapper {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-areas:
-       "header"
-       "sidebar"
-       "content"
-       "sidebar2"
-       "footer"
-    }
-  
-      @media only screen and (min-width: 500px)  {
-      .wrapper {
-  
-          grid-template-columns: 20% auto;
-          grid-template-areas:
-      "header   header"
-          "sidebar  content"
-          "sidebar2 sidebar2"
-          "footer   footer";
-      }
-      }
-  
-      @media only screen and (min-width: 600px)   {
-          .wrapper {
-        grid-gap: 20px;
-              grid-template-columns: 120px auto 120px;
-              grid-template-areas:
-        "header  header  header"
-              "sidebar content sidebar2"
-              "footer  footer  footer";
-              max-width: 600px;
-          }
-
-        .sidebar {
-            grid-area: 2/1/3/2;
-        }
-
-        .sidebar2 {
-            grid-area: 2/3/4/4;
-        }
-
-        .footer {
-            grid-area: 4/1/5/4;
-        }
-      }
-  
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 150%; 
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/3/2;
   }
-  
-  .header,
-  .footer {
-    background-color: rgb(193, 230, 255);
-    margin: 0 5px;
-  }
-  
   .sidebar2 {
-    background-color: rgb(59, 85, 109);
-    color: rgb(192, 192, 192);
-    display: grid;
-    grid-area: repeat (3, 1fr);
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/4/4;
   }
+  .footer {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 4/1/5/4;
+  }
+}
 
-  .sidebar {
-      background-color: rgb(54, 80, 129);
-      color: rgb(197, 197, 197);
-  }
+.box {
+  background-color: #d1d1d1;
+  color: #463636;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
 
-  .a, .b, .c {
-      background-color: rgb(118, 118, 172);
-      color: #eee;
-      padding: 10px;
-  }
+.header,
+.footer {
+  background-color: #c1e6ff;
+  margin: 0 5px;
+}
+
+.sidebar2 {
+  background-color: #3b556d;
+  color: silver;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  grid-area: repeat 3, 1fr;
+}
+
+.sidebar {
+  background-color: #365081;
+  color: #c5c5c5;
+}
+
+.a, .b, .c {
+  background-color: #818191;
+  color: #eee;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
