@@ -117,4 +117,9 @@ body {
   color: #eee;
   padding: 10px;
 }
+
+.c {
+  -webkit-box-shadow: 10px 10px rgba(27, 27, 27, 0.424);
+          box-shadow: 10px 10px rgba(27, 27, 27, 0.424);
+}
 /*# sourceMappingURL=style.css.map */
