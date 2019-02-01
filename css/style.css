@@ -92,6 +92,11 @@ body {
   font-size: 150%;
 }
 
+.box:hover {
+  background-color: lightblue;
+  color: blueviolet;
+}
+
 .header,
 .footer {
   background-color: #c1e6ff;
