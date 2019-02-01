@@ -1,5 +1,5 @@
 body {
-  margin: 10px;
+  margin: 40px;
   background-color: #d8d1b3;
 }
 
@@ -39,9 +39,10 @@ body {
 }
 
 .wrapper {
+  padding: 10px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 2em;
       grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
 }
 

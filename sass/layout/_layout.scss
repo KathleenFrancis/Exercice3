@@ -1,5 +1,5 @@
 body {
-    margin: 10px;
+    margin: 40px;
     background-color: rgb(216, 209, 179);
   }
   
@@ -29,8 +29,9 @@ body {
       }
   
     .wrapper {
+      padding: 10px;
       display: grid;
-      grid-gap: 1em;
+      grid-gap: 2em;
       grid-template-areas:
        "header"
        "sidebar"
